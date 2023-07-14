@@ -24,12 +24,10 @@ body,html{
 }
 .container-row{
     display: grid;
-    grid-template-columns: repeat(autofill,min-max(200px);
-    grid-template-row: 1fr;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: 4fr;
 }
 .row{
     background: red;
-    height: 7rem;
-    width: 100%;
     border: 5px solid black;
 }
