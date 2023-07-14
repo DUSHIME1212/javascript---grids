@@ -18,7 +18,6 @@ body,html{
 }
 .container-nav{
     background: linear-gradient(90deg,#c02410,#c9f508);
-    width: 100%;
     border-radius: 25px;
     display: grid;
     align-content: center;
@@ -27,7 +26,7 @@ body,html{
 .container-row{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
-    grid-template-rows: 100px;
+    grid-template-rows: 4fr;
     grid-gap: 4px;
 }
 .row{
@@ -37,18 +36,37 @@ body,html{
     background: linear-gradient(90deg,#c01010,#c9f508);
     border-radius: 25px;
 }
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(4 ,1fr);
-    grid-auto-rows: minmax(150px,auto);
-    grid-template-areas: "header header","sidebar content";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "sidebar content content content";
+        grid-gap: 4px;
 }
-.grid1{
+
+.grid1 {
     display: grid;
+    align-content: center;
+    justify-content: center;
     grid-area: header;
-    background: linear-gradient(90deg,#1fc010,#c9f508);
+    background: linear-gradient(90deg, #1fc010, #c9f508);
+    border-radius: 25px;
 }
-.grid2{
+
+.grid2 {
+    display: grid;
+    align-content: center;
+    justify-content: center;
     grid-area: sidebar;
-    background: linear-gradient(90deg,#1fc010,#c9f508);
+    background: linear-gradient(90deg, #1fc010, #08f5ba);
+    border-radius: 25px;
+}
+.grid3 {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-area: content;
+    background: linear-gradient(90deg, #f5a700, #c9f508);
+    border-radius: 25px;
 }
