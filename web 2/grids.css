@@ -13,9 +13,12 @@
       "j j j i i";
   }
   
-  .a { grid-area: a; }
+  .a { grid-area: a;
+    background: linear-gradient(90deg, rgba(255,64,0,1) 0%, rgba(104,255,0,1) 21%, rgba(0,0,252,1) 93%, rgba(0,212,255,1) 100%); }
   
-  .b { grid-area: b; }
+  .b { grid-area: b;
+    background: rgb(32,255,0);
+    background: linear-gradient(311deg, rgba(32,255,0,1) 0%, rgba(0,63,254,1) 48%, rgba(255,0,0,1) 100%); }
   
   .c { grid-area: c; }
   
